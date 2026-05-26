@@ -19,7 +19,6 @@ public class ProgressionSystem : MonoBehaviour
         while (experience >= expPerLevel * currentLevel)
         {
             currentLevel++;
-            if (stats) stats.GetComponent<CharacterStats>().GetMaxHealth();
             Debug.Log($"Level Up! Level {currentLevel}");
         }
     }
